@@ -43,9 +43,13 @@ const Header = () => {
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <h1 className={`text-company-dark text-xl md:text-2xl font-bold ${scrolled ? '' : 'md:text-white'}`}>
-            БУДРЕМ<span className="text-company-yellow">СЕРВІС</span>
-          </h1>
+          <div className="h-12 md:h-14">
+            <img 
+              src="/lovable-uploads/95937962-d462-44d4-be60-0e70da822370.png" 
+              alt="SAV-REM логотип" 
+              className="h-full w-auto object-contain"
+            />
+          </div>
         </div>
 
         {/* Desktop Navigation */}
