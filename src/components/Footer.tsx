@@ -1,5 +1,6 @@
 
 import { ArrowUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -22,10 +23,16 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="text-center mb-6 md:mb-0">
-            <p className="text-gray-400">
+          <div className="text-center mb-6 md:mb-0 flex flex-col items-center">
+            <p className="text-gray-400 mb-2">
               © {new Date().getFullYear()} SAV-REM. Wszelkie prawa zastrzeżone
             </p>
+            <Link 
+              to="/admin" 
+              className="text-company-yellow hover:text-white text-sm transition-colors"
+            >
+              Panel administracyjny
+            </Link>
           </div>
           
           <button 

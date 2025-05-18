@@ -1,0 +1,38 @@
+
+{
+  "title": "Nasze usługi",
+  "subtitle": "Co oferujemy",
+  "description": "Oferujemy szeroki zakres usług remontowych i wykończeniowych. Wykonujemy zarówno kompleksowe projekty \"pod klucz\", jak i pojedyncze rodzaje prac.",
+  "services": [
+    { 
+      "title": "Remonty mieszkań", 
+      "description": "Kompleksowe remonty pomieszczeń mieszkalnych pod klucz",
+      "icon": "Home"
+    },
+    { 
+      "title": "Wykańczanie elewacji", 
+      "description": "Zewnętrzne prace związane z ocieplaniem i dekorowaniem elewacji budynków",
+      "icon": "Image"
+    },
+    { 
+      "title": "Układanie płytek", 
+      "description": "Profesjonalne układanie płytek ceramicznych, mozaiki i gresu",
+      "icon": "Map"
+    },
+    { 
+      "title": "Prace malarskie", 
+      "description": "Wysokiej jakości malowanie, szpachlowanie i gruntowanie powierzchni",
+      "icon": "Edit"
+    },
+    { 
+      "title": "Montaż płyt kartonowo-gipsowych", 
+      "description": "Tworzenie ścianek działowych, sufitów i innych konstrukcji z płyt gipsowo-kartonowych",
+      "icon": "CheckCircle"
+    },
+    { 
+      "title": "Usługi dodatkowe", 
+      "description": "Konsultacje, projekty, dobór materiałów, zakupy",
+      "icon": "Wrench"
+    }
+  ]
+}

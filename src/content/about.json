@@ -1,0 +1,33 @@
+
+{
+  "title": "O nas",
+  "subtitle": "Poznaj naszą firmę",
+  "description": "Nasza firma specjalizuje się w wykonywaniu wszelkiego rodzaju prac remontowych i wykończeniowych. Zapewniamy wysoką jakość, dotrzymywanie terminów i przejrzystą komunikację z klientem na każdym etapie.",
+  "mission": {
+    "title": "Nasza misja",
+    "paragraphs": [
+      "Dążymy nie tylko do wykonywania prac remontowych, ale do realizacji marzeń naszych klientów o idealnej przestrzeni do życia i pracy.",
+      "Nasi specjaliści nieustannie podnoszą swoje kwalifikacje, poznają nowe technologie i materiały, aby oferować najlepsze rozwiązania.",
+      "Cenimy każdego klienta i indywidualnie podchodzimy do każdego projektu, uwzględniając wszystkie życzenia i specyfikacje."
+    ]
+  },
+  "advantages": [
+    { 
+      "title": "10+ lat doświadczenia", 
+      "description": "Wieloletnie doświadczenie w branży remontowej i wykończeniowej" 
+    },
+    { 
+      "title": "Gwarancja na prace", 
+      "description": "Zapewniamy gwarancję na wszystkie wykonane przez nas prace" 
+    },
+    { 
+      "title": "Bezpłatna konsultacja", 
+      "description": "Profesjonalna konsultacja i wycena prac bez opłat" 
+    },
+    { 
+      "title": "Wysokiej jakości materiały", 
+      "description": "Współpracujemy tylko ze sprawdzonymi dostawcami jakościowych materiałów" 
+    }
+  ],
+  "teamImageUrl": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1770&auto=format&fit=crop"
+}

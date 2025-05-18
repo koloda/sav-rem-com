@@ -1,29 +1,12 @@
 
 import { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { getTestimonialsContent } from "../utils/contentLoader";
 
 const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      name: 'Helena Kowalska',
-      role: 'Właścicielka mieszkania',
-      text: "Jestem bardzo zadowolona z jakości remontu naszego mieszkania. Wszystkie prace zostały wykonane na czas i na wysokim poziomie. Szczególnie imponująca jest dbałość o detale i gotowość do pomocy przy wyborze materiałów.",
-      avatar: 'https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?q=80&w=1160&auto=format&fit=crop',
-    },
-    {
-      name: 'Jan Nowak',
-      role: 'Dyrektor centrum biurowego',
-      text: "Współpraca z firmą była bardzo przyjemna. Wyremontowali nasze biuro w rekordowo krótkim czasie, co pozwoliło nam szybko wrócić do pracy. Jakość prac na najwyższym poziomie!",
-      avatar: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1170&auto=format&fit=crop',
-    },
-    {
-      name: 'Maria Wiśniewska',
-      role: 'Właścicielka sklepu',
-      text: "Doskonała praca przy remoncie lokalu handlowego. Zespół pracował szybko i sprawnie. Projekt wnętrza przerósł moje oczekiwania. Będę polecać was wszystkim znajomym!",
-      avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=922&auto=format&fit=crop',
-    }
-  ];
-
+  const testimonialsContent = getTestimonialsContent();
+  const { testimonials } = testimonialsContent;
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoplay, setAutoplay] = useState(true);
 
@@ -55,11 +38,10 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="section-padding bg-company-lightgray">
       <div className="container mx-auto container-padding">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-company-dark">Opinie</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-company-dark">{testimonialsContent.title}</h2>
           <div className="w-20 h-1 bg-company-yellow mx-auto mb-8"></div>
           <p className="text-lg max-w-3xl mx-auto text-gray-700">
-            Co mówią o nas nasi klienci, którzy już skorzystali z naszych usług 
-            i byli zadowoleni z rezultatu.
+            {testimonialsContent.description}
           </p>
         </div>
 
