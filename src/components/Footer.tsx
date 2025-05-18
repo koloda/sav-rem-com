@@ -15,16 +15,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold mb-2">
-              БУДРЕМ<span className="text-company-yellow">СЕРВІС</span>
+              SAV<span className="text-company-yellow">-REM</span>
             </h2>
             <p className="text-gray-400">
-              Якісний ремонт інтер'єру та екстер'єру
+              Wysokiej jakości remonty wnętrz i elewacji
             </p>
           </div>
           
           <div className="text-center mb-6 md:mb-0">
             <p className="text-gray-400">
-              © {new Date().getFullYear()} БудремСервіс. Всі права захищені
+              © {new Date().getFullYear()} SAV-REM. Wszelkie prawa zastrzeżone
             </p>
           </div>
           

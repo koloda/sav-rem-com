@@ -4,33 +4,33 @@ import { Home, Wrench, CheckCircle, Edit, Image, Map } from "lucide-react";
 const ServicesSection = () => {
   const services = [
     { 
-      title: "Ремонт квартир", 
-      description: "Комплексний ремонт житлових приміщень під ключ",
+      title: "Remonty mieszkań", 
+      description: "Kompleksowe remonty pomieszczeń mieszkalnych pod klucz",
       icon: <Home className="w-10 h-10 text-company-yellow mb-4" />
     },
     { 
-      title: "Оздоблення фасадів", 
-      description: "Зовнішні роботи з утеплення та декорування фасадів будівель",
+      title: "Wykańczanie elewacji", 
+      description: "Zewnętrzne prace związane z ocieplaniem i dekorowaniem elewacji budynków",
       icon: <Image className="w-10 h-10 text-company-yellow mb-4" />
     },
     { 
-      title: "Укладання плитки", 
-      description: "Професійне укладання керамічної плитки, мозаїки та керамограніту",
+      title: "Układanie płytek", 
+      description: "Profesjonalne układanie płytek ceramicznych, mozaiki i gresu",
       icon: <Map className="w-10 h-10 text-company-yellow mb-4" />
     },
     { 
-      title: "Малярні роботи", 
-      description: "Якісне фарбування, шпаклювання, грунтування поверхонь",
+      title: "Prace malarskie", 
+      description: "Wysokiej jakości malowanie, szpachlowanie i gruntowanie powierzchni",
       icon: <Edit className="w-10 h-10 text-company-yellow mb-4" />
     },
     { 
-      title: "Монтаж гіпсокартону", 
-      description: "Створення перегородок, стель та інших конструкцій з гіпсокартону",
+      title: "Montaż płyt kartonowo-gipsowych", 
+      description: "Tworzenie ścianek działowych, sufitów i innych konstrukcji z płyt gipsowo-kartonowych",
       icon: <CheckCircle className="w-10 h-10 text-company-yellow mb-4" />
     },
     { 
-      title: "Додаткові послуги", 
-      description: "Консультації, дизайн-проєкти, підбір матеріалів, закупівля",
+      title: "Usługi dodatkowe", 
+      description: "Konsultacje, projekty, dobór materiałów, zakupy",
       icon: <Wrench className="w-10 h-10 text-company-yellow mb-4" />
     },
   ];
@@ -39,11 +39,11 @@ const ServicesSection = () => {
     <section id="services" className="section-padding bg-gray-50">
       <div className="container mx-auto container-padding">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-company-dark">Наші послуги</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-company-dark">Nasze usługi</h2>
           <div className="w-20 h-1 bg-company-yellow mx-auto mb-8"></div>
           <p className="text-lg max-w-3xl mx-auto text-gray-700">
-            Пропонуємо широкий спектр послуг з ремонту та оздоблення примiщень. 
-            Виконуємо як комплексні проекти "під ключ", так і окремі види робіт.
+            Oferujemy szeroki zakres usług remontowych i wykończeniowych. 
+            Wykonujemy zarówno kompleksowe projekty "pod klucz", jak i pojedyncze rodzaje prac.
           </p>
         </div>
 

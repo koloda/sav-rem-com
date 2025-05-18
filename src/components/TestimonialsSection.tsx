@@ -5,21 +5,21 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: 'Олена Петренко',
-      role: 'Власник квартири',
-      text: "Дуже задоволена якістю ремонту нашої квартири. Всі роботи були виконані вчасно і на високому рівні. Особливо вражає увага до деталей та готовність допомогти з вибором матеріалів.",
+      name: 'Helena Kowalska',
+      role: 'Właścicielka mieszkania',
+      text: "Jestem bardzo zadowolona z jakości remontu naszego mieszkania. Wszystkie prace zostały wykonane na czas i na wysokim poziomie. Szczególnie imponująca jest dbałość o detale i gotowość do pomocy przy wyborze materiałów.",
       avatar: 'https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?q=80&w=1160&auto=format&fit=crop',
     },
     {
-      name: 'Іван Ковальчук',
-      role: 'Директор офісного центру',
-      text: "Співпраця з компанією була дуже приємною. Вони відремонтували наш офіс за рекордно короткий термін, що дозволило нам швидко повернутися до роботи. Якість робіт на висоті!",
+      name: 'Jan Nowak',
+      role: 'Dyrektor centrum biurowego',
+      text: "Współpraca z firmą była bardzo przyjemna. Wyremontowali nasze biuro w rekordowo krótkim czasie, co pozwoliło nam szybko wrócić do pracy. Jakość prac na najwyższym poziomie!",
       avatar: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1170&auto=format&fit=crop',
     },
     {
-      name: 'Марія Шевченко',
-      role: 'Власник магазину',
-      text: "Відмінна робота з ремонту торгового приміщення. Команда працювала швидко та злагоджено. Дизайн інтер'єру перевершив мої очікування. Буду рекомендувати вас всім знайомим!",
+      name: 'Maria Wiśniewska',
+      role: 'Właścicielka sklepu',
+      text: "Doskonała praca przy remoncie lokalu handlowego. Zespół pracował szybko i sprawnie. Projekt wnętrza przerósł moje oczekiwania. Będę polecać was wszystkim znajomym!",
       avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=922&auto=format&fit=crop',
     }
   ];
@@ -55,11 +55,11 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="section-padding bg-company-lightgray">
       <div className="container mx-auto container-padding">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-company-dark">Відгуки</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-company-dark">Opinie</h2>
           <div className="w-20 h-1 bg-company-yellow mx-auto mb-8"></div>
           <p className="text-lg max-w-3xl mx-auto text-gray-700">
-            Що говорять про нас наші клієнти, які вже скористалися нашими послугами 
-            та залишилися задоволеними результатом.
+            Co mówią o nas nasi klienci, którzy już skorzystali z naszych usług 
+            i byli zadowoleni z rezultatu.
           </p>
         </div>
 

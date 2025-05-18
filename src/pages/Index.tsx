@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   useEffect(() => {
-    document.title = "SAV-REM - Якісний ремонт інтер'єру та екстер'єру";
+    document.title = "SAV-REM - Wysokiej jakości remonty wnętrz i elewacji";
   }, []);
 
   return (

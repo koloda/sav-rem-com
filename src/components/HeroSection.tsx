@@ -21,16 +21,16 @@ const HeroSection = () => {
     >
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Якісний ремонт інтер'єру та екстер'єру під ключ
+          Wysokiej jakości remonty wnętrz i elewacji pod klucz
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Надійно. Швидко. Професійно.
+          Niezawodnie. Szybko. Profesjonalnie.
         </p>
         <Button 
           onClick={scrollToContact} 
           className="bg-company-yellow hover:bg-company-yellow/90 text-company-dark font-medium py-3 px-8 text-lg"
         >
-          Отримати консультацію
+          Uzyskaj konsultację
         </Button>
       </div>
     </section>

@@ -37,11 +37,11 @@ const PortfolioSection = () => {
     <section id="portfolio" className="section-padding bg-white">
       <div className="container mx-auto container-padding">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-company-dark">Портфоліо</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-company-dark">Portfolio</h2>
           <div className="w-20 h-1 bg-company-yellow mx-auto mb-8"></div>
           <p className="text-lg max-w-3xl mx-auto text-gray-700">
-            Приклади наших робіт, які ми виконали на замовлення наших клієнтів. 
-            Кожен проект є унікальним та виконаним з урахуванням всіх побажань замовника.
+            Przykłady naszych prac, które wykonaliśmy na zamówienie naszych klientów. 
+            Każdy projekt jest unikalny i wykonany z uwzględnieniem wszystkich życzeń zamawiającego.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const PortfolioSection = () => {
             >
               <img 
                 src={image} 
-                alt={`Приклад роботи ${index + 1}`}
+                alt={`Przykład pracy ${index + 1}`}
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
               <div className="overlay">

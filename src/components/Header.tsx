@@ -47,11 +47,11 @@ const Header = () => {
   };
 
   const navLinks = [
-    { title: "Про нас", id: "about" },
-    { title: "Послуги", id: "services" },
-    { title: "Портфоліо", id: "portfolio" },
-    { title: "Відгуки", id: "testimonials" },
-    { title: "Контакти", id: "contact" },
+    { title: "O nas", id: "about" },
+    { title: "Usługi", id: "services" },
+    { title: "Portfolio", id: "portfolio" },
+    { title: "Opinie", id: "testimonials" },
+    { title: "Kontakt", id: "contact" },
   ];
 
   return (
@@ -61,7 +61,7 @@ const Header = () => {
           <div className="h-12 md:h-14">
             <img 
               src="/lovable-uploads/95937962-d462-44d4-be60-0e70da822370.png" 
-              alt="SAV-REM логотип" 
+              alt="SAV-REM logo" 
               className="h-full w-auto object-contain"
             />
           </div>
