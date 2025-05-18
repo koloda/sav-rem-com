@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +15,19 @@ const Header = () => {
         setScrolled(true);
       } else {
         setScrolled(false);
+      }
+      
+      // Determine which section is currently in view
+      const sections = ['about', 'services', 'portfolio', 'testimonials', 'contact'];
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom > 100) {
+            setActiveSection(section);
+            break;
+          }
+        }
       }
     };
 
@@ -28,6 +42,7 @@ const Header = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setActiveSection(id);
     setIsMenuOpen(false);
   };
 
@@ -40,7 +55,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#15161B] shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <div className="h-12 md:h-14">
@@ -58,7 +73,11 @@ const Header = () => {
             <button 
               key={link.id} 
               onClick={() => scrollToSection(link.id)} 
-              className={`font-medium hover:text-company-yellow transition-colors ${scrolled ? 'text-company-dark' : 'text-white'}`}
+              className={`font-medium transition-colors ${
+                activeSection === link.id 
+                  ? 'text-company-yellow' 
+                  : 'text-white hover:text-company-yellow'
+              }`}
             >
               {link.title}
             </button>
@@ -67,7 +86,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-company-dark"
+          className="md:hidden text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         >
@@ -76,13 +95,17 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="fixed inset-0 z-50 bg-white p-4 flex flex-col mt-16">
+          <div className="fixed inset-0 z-50 bg-[#15161B] p-4 flex flex-col mt-16">
             <div className="flex flex-col space-y-4 py-8">
               {navLinks.map((link) => (
                 <button 
                   key={link.id} 
                   onClick={() => scrollToSection(link.id)} 
-                  className="text-company-dark font-medium text-lg py-2 hover:text-company-yellow transition-colors"
+                  className={`font-medium text-lg py-2 transition-colors ${
+                    activeSection === link.id 
+                      ? 'text-company-yellow' 
+                      : 'text-white hover:text-company-yellow'
+                  }`}
                 >
                   {link.title}
                 </button>
