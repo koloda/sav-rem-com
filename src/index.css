@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -93,9 +96,44 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Montserrat', sans-serif;
   }
 
   body {
     @apply bg-background text-foreground;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-padding {
+  @apply px-4 md:px-8;
+}
+
+/* Portfolio hover effect */
+.portfolio-item {
+  @apply relative overflow-hidden;
+}
+
+.portfolio-item .overlay {
+  @apply absolute inset-0 bg-company-dark bg-opacity-70 opacity-0 flex items-center justify-center transition-opacity duration-300;
+}
+
+.portfolio-item:hover .overlay {
+  @apply opacity-100;
+}
+
+/* Service card hover effect */
+.service-card {
+  @apply transition-all duration-300;
+}
+
+.service-card:hover {
+  @apply shadow-lg -translate-y-2;
 }
